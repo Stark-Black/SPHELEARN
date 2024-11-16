@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idiomas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .cuadro1 {
+            width: 100%;
+            padding: 20px;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        .cuadro1 h1 {
+            font-size: 1.8rem;
+        }
+
+        .contenedor-botones {
+            display: flex;
+            flex-wrap: wrap; /* Los botones se acomodan en varias filas si es necesario */
+            justify-content: center; /* Centra los botones horizontalmente */
+            gap: 20px; /* Espacio entre los botones */
+            padding: 20px;
+        }
+
+        .boton-imagen-texto {
+            display: flex;
+            flex-direction: column; /* Imagen arriba, texto abajo */
+            justify-content: center;
+            align-items: center;
+            width: 120px; /* Ancho adaptable */
+            height: auto;
+            padding: 15px;
+            background-color: #af91e7;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton-imagen-texto img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .boton-imagen-texto:hover {
+            background-color: #173c6d;
+        }
+
+        /* Ajustes para pantallas pequeñas (móviles) */
+        @media (max-width: 768px) {
+            .cuadro1 h1 {
+                font-size: 1.5rem;
+            }
+
+            .boton-imagen-texto {
+                width: 100px; /* Botones más pequeños */
+                font-size: 0.9rem;
+            }
+
+            .contenedor-botones {
+                gap: 10px; /* Reduce el espacio entre botones */
+            }
+        }
+
+        /* Ajustes para pantallas grandes */
+        @media (min-width: 1024px) {
+            .cuadro1 h1 {
+                font-size: 2rem;
+            }
+
+            .contenedor-botones {
+                gap: 30px; /* Más espacio entre botones */
+            }
+
+            .boton-imagen-texto {
+                width: 150px; /* Botones más grandes */
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadro1">
+        <h1>ESCOJA QUÉ IDIOMA QUIERE APRENDER</h1>
+    </div>
+    <div class="contenedor-botones">
+        <button class="boton-imagen-texto">
+            <img src="img/Alemania.png" alt="Icono 1">
+            Alemán
+        </button>
+        <button class="boton-imagen-texto">
+            <img src="img/EEUU.jpg" alt="Icono 2">
+            Inglés
+        </button>
+        <button class="boton-imagen-texto">
+            <img src="img/Francia.jpg" alt="Icono 3">
+            Francés
+        </button>
+        <button class="boton-imagen-texto">
+            <img src="img/Perú.png" alt="Icono 4">
+            Quechua
+        </button>
+        <button class="boton-imagen-texto">
+            <img src="img/Portugal.png" alt="Icono 5">
+            Portugués
+        </button>
+    </div>
+</body>
+</html>

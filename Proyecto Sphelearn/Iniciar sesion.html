@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphelearn</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+        }
+
+        /* Sección izquierda (imagen) */
+        .left-section {
+            flex: 1;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .left-section img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px; /* Opcional para un diseño más suave */
+        }
+
+        /* Sección derecha (formulario) */
+        .right-section {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid #ccc;
+        }
+
+        .right-section h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+            min-width: 48%; /* Para mantener dos columnas */
+        }
+
+        .submit-btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 200px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos Responsivos */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Cambia a diseño vertical */
+            }
+
+            .right-section {
+                border-left: none;
+                border-top: 1px solid #ccc;
+            }
+
+            .form-row .form-group {
+                min-width: 100%; /* Cambia a diseño en pila */
+            }
+
+            .right-section h1 {
+                font-size: 1.5rem;
+            }
+
+            .submit-btn {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sección izquierda -->
+        <div class="left-section">
+            <img src="img/sefelearme.jpeg" alt="Imagen descriptiva">
+        </div>
+
+        <!-- Sección derecha -->
+        <div class="right-section">
+            <h1>Sphelearn</h1>
+            <form>
+                <!-- Campo Nombre -->
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <!-- Campo Lenguaje Materno y Fecha de Nacimiento -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="lenguaje">Lenguaje materno</label>
+                        <select id="lenguaje" name="lenguaje" required>
+                            <option value="español">Español</option>
+                            <option value="ingles">Inglés</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    </div>
+                </div>
+
+                <!-- Campo Correo -->
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+                </div>
+
+                <!-- Botón Siguiente -->
+                <button type="submit" class="submit-btn">Siguiente</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
