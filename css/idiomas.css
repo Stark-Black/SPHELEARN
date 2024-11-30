@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Dongle, sans-serif;
+}
+.carousel {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.carousel img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.cuadro1 {
+    width: 100%;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.cuadro1 h1 {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+    .cuadro1 h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cuadro1 h1 {
+        font-size: 2rem;
+    }
+}
+
+.boton {
+    width: auto;
+    padding: 10px 20px;
+}
+
+.container {
+    margin-top: 50px;
+}

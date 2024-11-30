@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/Login_2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/tema.css">
+    <script src="./JS/temas.js" defer></script>
+    <title>Sphelearn</title>
+
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Sección izquierda -->
+        <div class="lado_izquierdo">
+            <img src="img/sphelearn.png" alt="Imagen descriptiva" style="max-width: 80%; height: auto;">
+        </div>
+
+        <!-- Sección derecha -->
+        <div class="lado_derecho">
+            <div class="Lenguajes">
+                <label for="idioma">Idioma de la página:</label>
+                <select id="idioma">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                </select>
+            </div>
+            <h1>Sphelearn</h1>
+            <form onsubmit="return iniciarSesion(event)">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" placeholder="Ingresa tu usuario">
+            
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" placeholder="Ingresa tu contraseña">
+            
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+    <script src="JS/Login_2.js"></script>
+</body>
+</html>
