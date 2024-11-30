@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sphelearn</title>
+        <link href="https://fonts.googleapis.com/css2?family=Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/video.css">
+        <link rel="stylesheet" href="./css/tema.css">
+        <script src="JS/temas.js"></script>
+    </head>
+    <body>    
+        <div id="video-container">
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <video id="video" width="906px" height="510px" controls>
+                <source src="/images/video.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+                <track id="track-es" kind="subtitles" label ="Español" src="/images/spanishsub.vtt" srclang="es"> </track> 
+                <track id="track-en" kind="subtitles" label ="Inglés" src="/images/englishsub.vtt" srclang="en"> </track> 
+            </video>
+        </div>
+        <button onclick="location.href='evaluacion.html'"> Continuar </button>
+
+        <script src="JS/video.js"></script>
+    </body>
+</html>    

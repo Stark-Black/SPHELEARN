@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relaciona las palabras</title>
+  <link rel="stylesheet" href="css/evaluacion.css">
+  
+</head>
+<body>
+  <div class="exercise-container">
+    <div class="header">
+      <span class="close-btn" onclick="location.href='aprender.html'">✖</span>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Relaciona las palabras</h2>
+      <div class="words-container">
+        <div class="words left">
+          <div class="word" draggable="true" data-match="scenery">Scenery</div>
+          <div class="word" draggable="true" data-match="ticket">Ticket</div>
+          <div class="word" draggable="true" data-match="hot air balloons">Hot air balloons</div>
+          <div class="word" draggable="true" data-match="luggage">Luggage</div>
+        </div>
+        <div class="words right">
+          <div class="word" data-accept="scenery">Paisaje</div>
+          <div class="word" data-accept="ticket">Boleto</div>
+          <div class="word" data-accept="hot air balloons">Globos aerostáticos</div>
+          <div class="word" data-accept="luggage">Equipaje</div>
+        </div>
+      </div>
+      <div class="botones">        
+        <button class="video" onclick="location.href='video.html'">Ver Video</button>
+        <button class="continuar">Continuar</button>
+      </div>      
+    </div>
+  </div>
+  <script src="JS/evaluacion.js"></script>
+</body>
+</html>
